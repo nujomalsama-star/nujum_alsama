@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>أكاديمية نجوم السما للتدريب والتطوير</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/png" href="pictures/logo.png">
+    <!--fontaweosme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body dir="rtl">
+      <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img class="logo-nav" src="pictures/logo.png" alt="logo">
+                <p>اكاديمية نجوم السما</p>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">الدورات</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">من نحن</a></li>
+                <li class="nav-item"><a href="#sitefooter1" class="nav-link">اتصل بنا</a></li>
+            </ul>
+             <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+     
+ 
+     
+    <header>
+
+   
+
+        
+        <img class="logo" src="pictures/logo.png" alt="logo">
+        
+        <h1 style="color: aliceblue;"> أكاديمية نجوم السما للتدريب والتطوير  🎓</h1>
+        <h2 style="color: goldenrod;">الاكاديمية معتمدة بالعراق </h2>
+        <h4 style="color: aliceblue;">نقدم حلول تدريبية مبتكرة للتطوير</h4>
+        <b style="color: goldenrod;">مرحبا بك! اكتشف أفضل الكورسات التعليمية</b>
+        
+    </header>
+
+    <input type="text" id="searchBar" placeholder="ابحث عن دورة...">
+    
+    <div class="courses">
+        
+        <div class="course">
+            <img class="logo-courses" src="pictures/python.png" alt="">
+            <h2>دورة تعلم لغة python</h2>
+            <p>اساسيات اللغة الاكثر طلباً في سوق العمل</p>
+            <br>
+            <br>
+            <footer>
+            <button class="details-btn" onclick="openModal('python')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdej6hlAm5nbw1GBjIdWtP6Mm3YfkTdIYvgy9L8hwpJw1F1bg/viewform?usp=dialog'">تسجيل</button>
+            </footer>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/microsoft office.png" alt="">
+            <h2>دورة تعلم مجموعة microsoft office</h2>
+            <p>اقوة دورة لأتقان مهارات العمل المكتبي </p>
+            <br>
+            <br>
+            <button class="details-btn" onclick="openModal('microsoftOffice')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfiEW6v1b9tNrhNEo-vCxGBLzgrNykiB6deMDW-NXmalkjsMQ/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/AutoCAD.png" alt="">
+            <h2>دورة تعلم برنامج AutoCAD</h2>
+            <p>اتقان الرسم الهندسي ثنائي وثلاثي الابعاد</p>
+            <br>
+            <br>
+            <button class="details-btn" onclick="openModal('AutoCAD')">عرض التفاصيل</button>
+             <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScFRlRUci-aSbldEk5E9htepHe2XnP7zT6rlCTUX_2GVzelcw/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/Interior Design.png" alt="">
+            <h2>دورة تعلم التصميم الداخلي Interior Design</h2>
+            <p>تعلم فنون التصميم الداخلي </p>
+            <button class="details-btn" onclick="openModal('Interior Design')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeOsbpFeRC8enSx-xOYeZGlcoiIPql0D7h1vEeijyCD942xkA/viewform?usp=publish-editor'">تسجيل</button>
+            
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/c++.png" alt="">
+            <h2>دورة تعلم لغة ++C</h2>
+            <p>دورة متكاملة لبناء اسس البرمجة القوية .</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="details-btn" onclick="openModal('c++')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdIFx27IjElbCZO4Y1UIUNjIXerT1T9Su4H_C9_czkxzRcLKg/viewform?usp=dialog'">تسجيل</button>
+        </div>
+        <div class="course">
+             <img class="logo-courses" src="pictures/Csharp.png" alt="">
+            <h2>دورة تعلم لغة #C</h2>
+            <p>مخصصة للمستوى المتقدم.</p>
+             <br>
+            <br>
+            <br>
+            <br>
+            <button class="details-btn" onclick="openModal('Csharp')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfdIvoAUXEugjCOXvr3ZWJFTfZhsJxZtAv1kaJnQEUTHPxTyA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/Accounting.png" alt="">
+            <h2>دورة تعلم المحاسبة الشامل</h2>
+            <p>مناسبة للمبتدئين.</p>
+            <button class="details-btn" onclick="openModal('Accounting')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe3OeLnyzRnm1a5UG_n_uOZVZ4pwtajXIwdk5YLTbkhR_GHlA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/wep-design.png" alt="">
+            <h2>دورة تعلم Web Design-Front-End</h2>
+            <p>مشاريع عملية تطبيقية.</p>
+            <button class="details-btn" onclick="openModal('Front-End')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdCczd2r5oE9-TXIkL4Cn-NQ_SD7Z0niSl2-egpeUkXP-jQNA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/VB.png" alt="">
+            <h2>دورة تعلم لغة <br>Visual Basic</h2>
+            <p>محتوى متجدد باستمرار.</p>
+            <button class="details-btn" onclick="openModal('VB')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfGa6cb7t2NFhSZ4crzUaBcmxvNgLu2ZyXB0-wz2EVLAOMk7g/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/English.png" alt="">
+            <h2>دورة تعلم اللغة الانكليزية </h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('english')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNn_UH9z15dT8I-Hat_CuG4miNoaOKe5aPO3KLnrvlV0sG2w/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+          <div class="course">
+            <img class="logo-courses" src="pictures/odoo.png" alt="">
+            <h2>دورة تعلم برنامج  <br>Odooالمحاسبي </h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('odoo')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc_VKKGx6Adw_NaI8csgljBttSpAnObES7Pszoac3Re2p8C4A/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+         <div class="course">
+            <img class="logo-courses" src="pictures/CS.png" alt="">
+            <h2>دورة تعلم الامن السيبراني  Cybersecurity</h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('sc')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdlKNNYqbwXFGg3fSUDYoRcYgE7wbYgrZfgJvYFEKXwpcCjzw/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/IMP.png" alt="">
+            <h2>  دورة تعلم التسويق والترويج الشامل Comprehensive marketing and promotion</h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('cmap')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScEhzXax0elYK7-EXlTeXzqCa81aWNfaNGuD1r-IDYSWSnXaw/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+           <div class="course">
+            <img class="logo-courses" src="pictures/TOT.png" alt="">
+            <h2>دورة مخصصة لإعداد المدربينTOT</h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('TOT')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScna5S36aYbbZJMxGAtMbz3qSxz0IpmX5QuTwF12nLDG3t-4A/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/HR.png" alt="">
+            <h2>دورة تعلم الموارد البشرية <br>HR</h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('HR')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfPruS7MCBIU96D5yOyT69Mjk5eNxv-aGHUmpW_Wnw_EiEDDQ/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/ED.png" alt="">
+            <h2>دورة تعلم التصميم الخارجي <br>Exterior design</h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('ED')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdQGPLAvKLfUUwn7h8uC3-ROyagfdXx5pj6Z6va4U7wJUGFrA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/3Dmax.png" alt="">
+            <h2>دورة تعلم برنامج<br>3D-MAX<br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('3Dmax')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe8jsY7GQsPD8Bs8sEbLOqapBgNRn1TWs8HNdDLb3bMWYex9w/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/AD.png" alt="">
+            <h2>دورة تعلم التصميم المعماري <br>Architectural design <br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('AD')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeoAPIx2cy89b8yYeby0LznrPTTel5XTNM7f6TBlvivEn-ozw/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/freehandD.png" alt="">
+            <h2>دورة تعلم الرسم الحر و رسم التخطيط <br>Free drawing and planning drawing <br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('freehandD')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd9CYcOAgyb9XoNXuKNcdkWono0xAnfe9FgWu9-K2iGC_xE-A/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+         <div class="course">
+            <img class="logo-courses" src="pictures/RAO.png" alt="">
+            <h2>دورة الاظهار والاخراج <br>Rendering and output <br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('RAO')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdXRHsdFfUYf4UN7s3RNEeBshRnRrIBfLTq00qLKxQRbg18nQ/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+         <div class="course">
+            <img class="logo-courses" src="pictures/engineeringDrawin.png" alt="">
+            <h2>دورة تعلم الرسم الهندسي <br>Engineering Drawing<br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('Engineering Drawing')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf5k4bQm5Jmh7xxD8Rcbu4IbngyoQmYnwppRI_w7W_4i1ntqA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+        <div class="course">
+            <img class="logo-courses" src="pictures/PD.png" alt="">
+            <h2>دورة تعلم رسم المنظور <br>Perspective Drawing<br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('PD')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfK-BY8iGB1c7dQQjGhYp2L2JxxjR6CmCSjfBKQmMQ-oSKcNw/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+         <div class="course">
+            <img class="logo-courses" src="pictures/RS.png" alt="">
+            <h2>دورة تعلم الريفت الانشائي<br>Revit Structural<br></h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('RS')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScTojapojrJPhxN7rjshinpU_1xTs49fDLoXqesn_y09FLRxg/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+          <div class="course">
+            <img class="logo-courses" src="pictures/quantities.png" alt="">
+            <h2> مهارات التخمين وحساب الكميات </h2>
+            <p>أفضل المصادر التعليمية بين يديك.</p>
+            <button class="details-btn" onclick="openModal('quantities')">عرض التفاصيل</button>
+            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScT29q2pq78_6Sjyhl6BdqwahD9C6ILnpE9MaEq33lb9bh2gA/viewform?usp=publish-editor'">تسجيل</button>
+        </div>
+
+      
+      
+      
+    </div>
+
+    <!-- Modal -->
+  
+  <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+            <button class="register-btn" onclick="googleform()">سجل الان</button>
+        </div>
+    </div>
+    <footer id="sitefooter1" class="site-footer" >
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <img src="pictures/logo.png" alt="شعار اكاديمية النجوم" class="footer-logo">
+            <span class="brand-name">اكاديمية نجوم السما</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/14NjDjJpoMe/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nujum_alsama_1?igsh=MWhmdXI0MWpoYzJucQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nujum.al_sama?_t=ZS-90NgCXyWrZQ&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/+9647766266477" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <br>
+            <br>
+            <a  href="tel:+9467766266477">07766266477</a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy;  اكاديمية نجوم السما-جميع الحقوق محفوظة  2025</p>
+        </div>
+
+    </div>
+</footer>
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+  
+   
+</body>
+</html>
