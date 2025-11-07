@@ -1,3 +1,29 @@
+ // انتظر حتى يتم تحميل الصفحة بالكامل
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // ابحث عن كل الروابط في الصفحة التي تبدأ بعلامة #
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            
+            // أضف "مستمع" لكل رابط لينتظر الضغط عليه
+            anchor.addEventListener('click', function(e) {
+                
+                // 1. أوقف السلوك الافتراضي (القفزة السريعة)
+                e.preventDefault();
+
+                // 2. احصل على الـ id الخاص بالهدف (مثل #contact-us-section)
+                let targetId = this.getAttribute('href');
+                let targetElement = document.querySelector(targetId);
+
+                // 3. قم بعمل سكرول ناعم إلى هذا الهدف
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start' // اجعل بداية القسم هي بداية الشاشة
+                    });
+                }
+            });
+        });
+    });
 document.addEventListener("DOMContentLoaded", function() {
     const navToggle = document.querySelector(".nav-toggle");
     const navMenu = document.querySelector(".nav-menu");
@@ -658,5 +684,6 @@ default:break;
             }
 
         }
+
 
     
