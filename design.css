@@ -316,7 +316,7 @@
             text-align: center;
         }
         .close {
-            color: #aaa;
+            color: red;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -578,5 +578,6 @@
   /* html{
     scroll-behavior: smooth !important;
   } */
+
 
 
