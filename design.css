@@ -209,6 +209,9 @@
     .footer-copyright p {
         font-size: 13px; /* تصغير خط الحقوق قليلاً */
     }
+   .modal{
+        margin-top: 60px;
+    }
 }
 /*--------------------------  */
         header {
@@ -575,4 +578,5 @@
   /* html{
     scroll-behavior: smooth !important;
   } */
+
 
